@@ -8,7 +8,7 @@
     <sch:ns uri="http://www.w3.org/2001/XMLSchema-instance" prefix="xsi"/>
         
 
-    <!-- file locations, note: this variable needs to be changed if the installation location change -->
+    <!--file locations, note: this variable needs to be changed if the installation location change -->
     <sch:let name="oid_loc" value="'../oids/'"/>
     
     <!-- global variables -->
