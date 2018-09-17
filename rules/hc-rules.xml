@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- pbx: 17 Sep 2018 Testing Ians' Validation Tool -->
 <rule_table>
     <rule ruleID="1" label="Debug: verification that the details are invoked." status="pending testing" mod-time="Apr 28, 2017">
         <detail doctype="1" template-id="1">Pending Business Determination</detail>

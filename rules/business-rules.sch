@@ -53,7 +53,7 @@
     <sch:let name="related-documents-oid" value="'2.16.840.1.113883.2.20.6.41'"/>
     <sch:let name="din-oid" value="'2.16.840.1.113883.2.20.6.42'"/>
     
-    
+    <!-- pbx: 17 Sep 2018, testing Ian's Validation Tool  -->
     <sch:let name="doc-language" value="lower-case(document/languageCode/@code)"/>
     <sch:let name="display-language" value="concat('name-',$doc-language)"/>
     <sch:let name="code" value="'TBD'"/>
