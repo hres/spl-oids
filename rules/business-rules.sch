@@ -68,8 +68,9 @@
     <sch:let name="derived_section" value="'TBD'"/>
     <sch:let name="section_counter" value="0"/>
     
+    <!-- pbx: 18 Sep turn debuging off in Prod -->
     <!-- Set debut to 1 of you want the debuging details -->
-    <sch:let name="debug" value="1"/>
+    <sch:let name="debug" value="0"/>
     <sch:pattern>
         <sch:title>pbx: test area</sch:title>
         <sch:rule context="/">
