@@ -1,463 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- pbx: 17 Sep 2018 Testing Ians' Validation Tool -->
+<!-- pbx: 1:33pm Sep 18 2018, rebuilt local env -->      
 <rule_table>
-    <rule ruleID="1" label="Debug: verification that the details are invoked." status="pending testing" mod-time="Apr 28, 2017">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
+    <rule flag="0" category="Debugging" label="Verification that the rule was invoked." mod-time="Apr 28, 2017">
+        <detail severity="Not Applicable"/>
     </rule>
-    <!-- General SPL Rules -->
-    <rule ruleID="SPL Rule 1" label="The document is either not well formed or valid against the schema." status="pending testing" mod-time="Jul 24, 2017">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
+    
+    <rule flag="SPL-1" category="Schema Issue" label="The document is either not well formed or valid against the schema." mod-time="Jul 24, 2017">
+        <detail severity="Error"/>
     </rule>
-    <rule ruleID="SPL Rule 2" label="The codeSystem value is incorrect." status="pending testing" mod-time="Dec 27, 2017">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
+    
+    <rule flag="SPL-2" category="OID Issue" label="The codeSystem value is incorrect." mod-time="Juk 4, 2018">
+        <!-- pbx: examples to show approach, they do not match any rule -->
+        <!-- ruleID, doctype, templateID, Status -->
+        <detail ruleID="SPL-2-0011" doctype="1" templateId="10" status="12" severity="Error"/>
+        <!-- ruleID, doctype, templateID -->
+        <detail ruleID="SPL-2-0012" doctype="1" templateId="10" severity="Info"/>
+        <!-- ruleID, doctype-->
+        <detail ruleID="SPL-2-0013" doctype="1" severity="Info"/>
+        <!-- ruleID, see actual rules below -->
+        <!-- doctype, templateID, Status -->
+        <detail doctype="1" templateId="10" status="12" severity="Info"/>
+        <!-- doctype, templateID -->
+        <detail doctype="1" templateId="10" severity="Info"/>
+        <!-- doctype -->
+        <detail doctype="1" severity="Info"/>
+        <!-- category, see actual rules below -->
+
+        <!-- pbx: actual rules (not examples) -->
+        <!-- ruleID-->
+        <detail ruleID="SPL-2-003" doctype="1" severity="Error"/>
+        <detail ruleID="SPL-2-004" doctype="1" severity="Error"/>
+        <!-- category -->
+        <detail severity="Error"/>
     </rule>
-    <rule ruleID="SPL Rule 3" label="An element with the cardinality of 1:1 or 1:n is missing." status="pending testing" mod-time="Apr 28, 2017">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
+
+    <rule flag="SPL-3" category="SPL: Omitted Element" label="A required element is missing." mod-time="Apr 28, 2017">
+        <detail ruleID="SPL-3-001" severity="Error"/>
+        <detail ruleID="SPL-3-002" severity="Error"/>
+        <detail severity="Warning"/>
     </rule>
-    <rule ruleID="SPL Rule 4" label="An element with the cardinality of 0:1 or 1:1 has been included more than once." status="pending testing" mod-time="Apr 28, 2017">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
+ 
+    <rule flag="SPL-4" category="SPL: Additional Element" label="An element has been included more than once." mod-time="Apr 28, 2017">
+        <detail severity="Warning"/>
     </rule>
-    <rule ruleID="SPL Rule 5" label="A required attribute is missing." status="pending testing" mod-time="Apr 28, 2017">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
+      
+    <rule flag="SPL-5" category="SPL: Attribute Issue" label="An attribute is missing or included more than once." mod-time="Apr 28, 2017">
+        <detail ruleID="SPL-5-001" severity="Error"/>
+        <detail ruleID="SPL-5-002" severity="Error"/>
+        <detail severity="Warning"/>
     </rule>
-    <rule ruleID="SPL Rule 6" label="The item (element or attribute) is empty." status="pending testing" mod-time="Apr 28, 2017">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
+    
+    <rule flag="SPL-6" category="SPL: Missing Information" label="The item (element or attribute) is empty or is missing mandatory aspects." mod-time="Apr 28, 2017">
+        <detail severity="Warning"/>
     </rule>
-    <rule ruleID="SPL Rule 7" label="The display name does not match the CV for the selected language." status="pending testing" mod-time="July 4, 2017">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
+    
+    <rule flag="SPL-7" category="SPL: Data Inconsistency" label="The display name does not match the CV for the selected language." mod-time="July 4, 2017">
+        <detail severity="Infomation"/>
     </rule>
-    <rule ruleID="SPL Rule 8" label="The attribute value is not in the CV or is contextually incorrect." status="pending testing" mod-time="Jan 11, 2018">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
+
+    <rule flag="SPL-8" category="Attribute Value Issue" label="The attribute value is set incorrectly or is not in the CV." mod-time="Jan 11, 2018">
+        <detail ruleID="SPL-8-001" severity="Error"/>
+        <detail ruleID="SPL-8-002" severity="Error"/>
+        <detail severity="Infomation"/>
     </rule>
-    <rule ruleID="SPL Rule 9" label="The element value is set incorrectly or is contextually incorrect." status="pending testing" mod-time="Jan 11, 2018">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
+    
+    <rule flag="SPL-9" category="SPL: Element Value Issue" label="The element value is set incorrectly or is not in the CV." mod-time="Jan 11, 2018">
+          <detail severity="Warning"/>
     </rule>
-    <rule ruleID="SPL Rule 10" label="The attribute value is set incorrectly or is contextually incorrect." status="pending testing" mod-time="Jan 11, 2018">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
+    
+    <rule flag="SPL-10" category="SPL: Notification" label="There is a notification flag for the content." mod-time="Jan 11, 2018">
+        <detail severity="Information"/>
     </rule>
-    <rule ruleID="SPL Rule 11" label="Content is not allowed." status="pending testing" mod-time="May 18, 2017">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
+    
+    <rule flag="SPL-11" category="SPL: Disallowed Content" label="Content is not allowed." mod-time="May 18, 2017">
+        <detail ruleID="SPL-11-001" severity="Error"/>
+        <detail severity="Error"/>
     </rule>
-    <rule ruleID="SPL Rule 12" label="Content formatting errors." status="pending testing" mod-time="Sep 25, 2017">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
+    
+    <rule flag="SPL-12" category="SPL: Content Formatting Issue" label="The content is incorrectly formatted." mod-time="Sep 25, 2017">
+        <detail severity="Infomation"/>
     </rule>
-    <rule ruleID="SPL Rule 13" label="Incorrect term context." status="pending testing" mod-time="Dec 27, 2017">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
+    
+    <rule flag="SPL-13" category="SPL: Processing Instruction Issue" label="The Processing Instruction (PI’s) are either incomplete, incorrect or contextually incorrect." mod-time="Sep 25, 2017">
+        <detail severity="Warning"/>
     </rule>
-    <rule ruleID="SPL Rule 14" label="Incorrect Term status." status="pending testing" mod-time="Dec 27, 2017">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
+    
+    <rule flag="SPL-14" category="SPL: Incorrect Context" label="The value is contextually incorrect." mod-time="Sep 25, 2017">
+        <detail severity="Warning"/>
     </rule>
-    <rule ruleID="SPL Rule 15" label="There is a notification flag for the content." status="pending testing" mod-time="Jan 11, 2017">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
+    
+    <!-- DT Rules follow -->
+    <rule flag="DT-1" category="DT: Omitted Element" label="A required element is missing." mod-time="Apr 28, 2017">
+        <detail ruleID="DT-1-001" severity="Error"/>
+        <detail severity="Warning"/>
     </rule>
-    <!-- Specific SPL Rules -->
-   <rule ruleID="SPL Rule 30" label="The versionNumber@value equals zero." status="pending testing" mod-time="May 18, 2017">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
+    
+    <rule flag="DT-2" category="DT: Additional Element" label="An element has been included more than once." mod-time="Apr 28, 2017">
+        <detail severity="Warning"/>
     </rule>
-    <rule ruleID="SPL Rule 31" label="The versionNumber@value is not an integer." status="pending testing" mod-time="May 18, 2017">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
+    
+    <rule flag="DT-3" category="DT: Attribute Issue" label="An attribute is missing or included more than once." mod-time="Apr 28, 2017">
+        <detail severity="Warning"/>
     </rule>
-    <rule ruleID="SPL Rule 32" label="No role has been assigned." status="pending testing" mod-time="Apr 28, 2017">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
+    
+    <rule flag="DT-4" category="DT: Missing Information" label="The item (element or attribute) is empty or is missing mandatory aspects." mod-time="Apr 28, 2017">
+        <detail severity="Warning"/>
     </rule>
-    <rule ruleID="SPL Rule 33" label="No effectiveTime value has directly or indirectly been assigned." status="pending testing" mod-time="Dec 30, 2017">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
+    
+    <rule flag="DT-5" category="DT: Data Inconsistency" label="The display name does not match the CV for the selected language." mod-time="July 4, 2017">
+        <detail severity="Infomation"/>
     </rule>
-    <rule ruleID="SPL Rule 34" label="The link target can not be found." status="pending testing" mod-time="Jan 2, 2018">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
+    
+    <rule flag="DT-6" category="DT: Attribute Value Issue" label="The attribute value is set incorrectly or is not in the CV." mod-time="Jan 11, 2018">
+        <detail severity="Infomation"/>
     </rule>
-    <rule ruleID="SPL Rule 35" label="A disallowed element has been included." status="pending testing" mod-time="Jan 4, 2018">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
+    
+    <rule flag="DT-7" category="DT: Element Value Issue" label="The element value is set incorrectly or is not in the CV." mod-time="Jan 11, 2018">
+        <detail severity="Warning"/>
     </rule>
-    <!-- General DT Rules -->
-    <rule ruleID="DT Rule 1" label="The codeSystem value is incorrect." status="pending testing" mod-time="Jan 9, 2018">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
+    
+    <rule flag="DT-8" category="DT: Notification" label="There is a notification flag for the content." mod-time="Jan 11, 2018">
+        <detail severity="Information"/>
     </rule>
-    <rule ruleID="DT Rule 2" label="An element with the cardinality of 1:1 or 1:n is missing." status="pending testing" mod-time="Jan 9, 2018">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
+    
+    <rule flag="DT-9" category="DT: Disallowed Content" label="Content is not allowed." mod-time="May 18, 2017">
+        <detail severity="Error"/>
     </rule>
-    <rule ruleID="DT Rule 3" label="An element with the cardinality of 0:1 or 1:1 has been included more than once." status="pending testing" mod-time="Jan 9, 2018">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
+    
+    <rule flag="DT-10" category="DT: Content Formatting Issue" label="The content is incorrectly formatted." mod-time="Sep 25, 2017">
+        <detail severity="Infomation"/>
     </rule>
-    <rule ruleID="DT Rule 4" label="Content is not allowed." status="pending testing" mod-time="Jan 9, 2018">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
+    
+    <rule flag="DT-11" category="DT: Processing Instruction Issue" label="The Processing Instruction (PI’s) are either incomplete, incorrect or contextually incorrect." mod-time="Sep 25, 2017">
+        <detail severity="Warning"/>
     </rule>
-    <rule ruleID="DT Rule 5" label="Element content is required." status="pending testing" mod-time="Jan 9, 2018">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
-    </rule>
-    <rule ruleID="DT Rule 6" label="Attribute content is required." status="pending testing" mod-time="Jan 9, 2018">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
-    </rule>
-    <rule ruleID="DT Rule 7" label="The display name does not match the CV for the selected language." status="pending testing" mod-time="Jan 9, 2018">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
-    </rule>
-    <rule ruleID="DT Rule 8" label="The attribute value is set incorrectly." status="pending testing" mod-time="Jan 9, 2018">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
-    </rule>    
-    <rule ruleID="DT Rule 9" label="The section is incorrect or contextually incorrect." status="pending testing" mod-time="Jan 9, 2018">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
-    </rule>    
-    <rule ruleID="DT Rule 10" label="The section sequence is incorrect or contextually incorrect." status="pending testing" mod-time="Jan 9, 2018">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
-    </rule>    
-    <rule ruleID="DT Rule 11" label="The Processing Instructions are not compliant to the IG." status="pending testing" mod-time="Jan 9, 2018">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
-    </rule>
-    <rule ruleID="DT Rule 12" label="Content formatting errors." status="pending testing" mod-time="Jan 9, 2018">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
-    </rule>
-    <rule ruleID="DT Rule 13" label="The attribute value is not in the CV or is contextually incorrect." status="pending testing" mod-time="Jan 11, 2018">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
-    </rule>
-    <rule ruleID="DT Rule 14" label="A disallowed element has been included." status="pending testing" mod-time="Jan 11, 2018">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
-    </rule>
-    <rule ruleID="DT Rule 15" label="Required content is missing." status="pending testing" mod-time="Jan 11, 2018">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
-    </rule>
-    <rule ruleID="DT Rule 16" label="There is a notification flag for the content." status="pending testing" mod-time="Jan 11, 2017">
-        <detail doctype="1" template-id="1">Pending Business Determination</detail>
-        <detail doctype="1" template-id="2">Pending Business Determination</detail>
-        <detail doctype="1" template-id="3">Pending Business Determination</detail>
-        <detail doctype="1" template-id="4">Pending Business Determination</detail>
-        <detail doctype="1" template-id="5">Pending Business Determination</detail>
-        <detail doctype="1" template-id="6">Pending Business Determination</detail>
-        <detail doctype="1" template-id="7">Pending Business Determination</detail>
-        <detail doctype="1" template-id="8">Pending Business Determination</detail>
-        <detail doctype="1" template-id="9">Pending Business Determination</detail>
-        <detail doctype="1" template-id="10">Pending Business Determination</detail>
+    
+    <rule flag="DT-12" category="DT: Incorrect Context" label="The value is contextually incorrect." mod-time="Sep 25, 2017">
+        <detail severity="Warning"/>
     </rule>
  </rule_table>
