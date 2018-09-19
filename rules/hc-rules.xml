@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- pbx: 1:33pm Sep 18 2018, rebuilt local env -->      
+<!-- pbx: updated 19 Sep, 2018 to include system rather than content errors -->   
 <rule_table>
     <rule flag="0" category="Debugging" label="Verification that the rule was invoked." mod-time="Apr 28, 2017">
+        <detail severity="Not Applicable"/>
+    </rule>
+    <rule flag="SYSTEM-0" category="System Error" label="An uncharicterized system error occured please contact HPFB support." mod-time="Sep 19, 2018">
+        <detail severity="Not Applicable"/>
+    </rule>
+    <rule flag="SYSTEM-1" category="Schema Location Error" label="The schema location can not be accessed at the specified location." mod-time="Sep 19, 2018">
         <detail severity="Not Applicable"/>
     </rule>
     
