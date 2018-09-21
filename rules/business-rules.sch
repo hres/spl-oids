@@ -7,7 +7,8 @@
     <sch:ns uri="http://docs.oasis-open.org/codelist/ns/genericode/1.0/" prefix="gc"/>
     <sch:ns uri="http://www.w3.org/2001/XMLSchema-instance" prefix="xsi"/>
     
-<!-- pbx: 1:33pm Sep 18 2018, rebuilt local env -->        
+    <!-- pbx: updated 21 Sep, 2018 to include SPL-1-001 error -->
+    <!-- pbx: 1:33pm Sep 18 2018, rebuilt local env -->        
 
     <!-- file locations, note: this variable needs to be changed if the installation location change -->
     <sch:let name="oid_loc" value="'..\oids\'"/>
@@ -132,6 +133,8 @@
             <sch:let name="language-code" value="languageCode/@code"/>
             <sch:let name="language-display-name" value="(document(concat($oid_loc,$language-code-oid,$file-suffix)))/gc:CodeList/SimpleCodeList/Row[./Value[@ColumnRef='code']/SimpleValue=$language-code]/Value[@ColumnRef=$display-language]/SimpleValue"/>
             
+            <!-- pbx: add check for schema location <sch:report test=???" id="SPL-1-001" flag="SPL-1">Schema Issue: The schema location is incorrect.</sch:report> -->
+          
             <sch:report test="count(typeId) = 0" flag="SPL-3">Document Information: The typeId element is missing.</sch:report>
             <sch:report test="count(typeId[@assigningAuthorityName]) = 0" flag="SPL-5">Document Information: The typeId@assigningAuthorityName attribute is missing.</sch:report>
             <sch:assert test="count(typeId[@assigningAuthorityName = 'Health Products and Food Branch']) = 1" flag="SPL-8">Document Information: The value for the typeId@assigningAuthorityName attribute is not 'Health Products and Food Branch'.</sch:assert>

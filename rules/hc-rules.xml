@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- pbx: 1:33pm Sep 18 2018, rebuilt local env -->      
+<!-- pbx: updated 21 Sep, 2018 to include SPL-1-001 error -->
+<!-- pbx: updated 19 Sep, 2018 to include system rather than content errors -->   
 <rule_table>
     <rule flag="0" category="Debugging" label="Verification that the rule was invoked." mod-time="Apr 28, 2017">
+        <detail severity="Not Applicable"/>
+    </rule>
+    <rule flag="SYSTEM-0" category="System Error" label="An uncharicterized system error occured please contact HPFB support." mod-time="Sep 19, 2018">
         <detail severity="Not Applicable"/>
     </rule>
     
     <rule flag="SPL-1" category="Schema Issue" label="The document is either not well formed or valid against the schema." mod-time="Jul 24, 2017">
         <detail severity="Error"/>
+        <detail ruleID="SPL-1-001" severity="Error"/>
     </rule>
     
     <rule flag="SPL-2" category="OID Issue" label="The codeSystem value is incorrect." mod-time="Juk 4, 2018">
