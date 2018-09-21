@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- pbx: updated 21 Sep, 2018 to include SPL-1-001 error -->
+<!-- pbx: updated 21 Sep, 2018 to include SPL-1-001, SPL-8-003 errors -->
 <!-- pbx: updated 19 Sep, 2018 to include system rather than content errors -->   
 <rule_table>
     <rule flag="0" category="Debugging" label="Verification that the rule was invoked." mod-time="Apr 28, 2017">
@@ -66,6 +66,7 @@
     <rule flag="SPL-8" category="Attribute Value Issue" label="The attribute value is set incorrectly or is not in the CV." mod-time="Jan 11, 2018">
         <detail ruleID="SPL-8-001" severity="Error"/>
         <detail ruleID="SPL-8-002" severity="Error"/>
+        <detail ruleID="SPL-8-003" severity="Error"/>
         <detail severity="Infomation"/>
     </rule>
     

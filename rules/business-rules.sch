@@ -7,7 +7,7 @@
     <sch:ns uri="http://docs.oasis-open.org/codelist/ns/genericode/1.0/" prefix="gc"/>
     <sch:ns uri="http://www.w3.org/2001/XMLSchema-instance" prefix="xsi"/>
     
-    <!-- pbx: updated 21 Sep, 2018 to include SPL-1-001 error -->
+    <!-- pbx: updated 21 Sep, 2018 to include SPL-1-001, SPL-8-003 errors -->
     <!-- pbx: 1:33pm Sep 18 2018, rebuilt local env -->        
 
     <!-- file locations, note: this variable needs to be changed if the installation location change -->
@@ -158,7 +158,7 @@
             <sch:report test="count(languageCode) = 0" flag="SPL-3">Document Information: The languageCode element is missing.</sch:report>
             <sch:report test="count(languageCode[@code]) = 0" flag="SPL-5">Document Information: The languageCode@code attribute is missing.</sch:report>
             <sch:assert test="languageCode/@code=$valid_languages" flag="SPL-8">Document Information: code: <sch:value-of select="languageCode/@code"/> is not contained in OID: <sch:value-of select="$language-code-oid"/></sch:assert>
-            <sch:assert test="languageCode[@code = '1'] or languageCode[@code = '2']" flag="SPL-8">Document Information: The value for the languageCode@code attribute is neither ENG or FRA.</sch:assert>
+            <sch:assert test="languageCode[@code = '1'] or languageCode[@code = '2']" id="SPL-8-003" flag="SPL-8">Document Information: The value for the languageCode@code attribute is neither ENG or FRA.</sch:assert>
             <sch:report test="count(languageCode[@codeSystem]) = 0" flag="SPL-5">Document Information: The languageCode@codeSystem attribute is missing.</sch:report>
             <sch:assert test="languageCode[@codeSystem = $language-code-oid]" flag="SPL-2">Document Information: The OID for element: <sch:value-of select=" local-name(languageCode)"/> should be: <sch:value-of select="$language-code-oid"/> however the codeSystem is set to: <sch:value-of select="languageCode/@codeSystem"/></sch:assert>
             
